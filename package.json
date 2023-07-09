@@ -1,0 +1,16 @@
+{
+  "name": "cyclicsort-fastslowptr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "findDuplicates.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.6.1",
+    "test": "^3.3.0"
+  }
+}

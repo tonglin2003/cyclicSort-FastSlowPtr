@@ -1,0 +1,34 @@
+function removeDuplicate(nums) // return the count of the unique
+{
+    // fast and slow pointer
+
+    // declare left and right ptr, locate at 1, since 0 is already unique
+    // left will point to the index after the unique element
+    // right will go through the arr and find the unique element
+
+    // while left < nums.length and right < nums.length:
+        // if nums[right] === nums[right-1], if duplicate
+            // right++
+        // else, not duplicate
+            // nums[left] = nums[right]
+
+    let left=1;
+    let right = 1;
+
+    while (left < nums.length && right < nums.length)
+    {
+        if (nums[right] === nums[right-1])
+            right++
+        else
+        {
+            nums[left] = nums[right]
+            left++;
+            right++;
+        }
+    }
+
+    // console.log(nums);
+    return left;
+}
+
+module.exports = removeDuplicate;
